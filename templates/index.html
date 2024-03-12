@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Form</title>
+    <style>
+        .h1{
+            align-items: center;
+            justify-content: center;
+        }
+    form {
+        max-width: 400px;
+        margin: 0 auto;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        background-color: #f9f9f9;
+    }
+
+    /* CSS styles for labels */
+    label {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    /* CSS styles for input fields */
+    input[type="text"] {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-sizing: border-box; /* Ensure padding and border are included in width */
+    }
+
+    /* CSS styles for the button */
+    .submit-button {
+        background-color: #4CAF50;
+        border: none;
+        color: white;
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        border-radius: 5px;
+        width: 100%;
+    }
+
+    /* Hover effect */
+    .submit-button:hover {
+        background-color: #45a049;
+    }
+</style>
+</head>
+<body>
+    <h1>Ads Click-Through Rate Prediction</h1>
+    <form action="/predict" method="post">
+        <label for="input1">Daily time spent on website:</label>
+        <input type="text" id="input1" name="input1"><br><br>
+
+        <label for="input2">Age:</label>
+        <input type="text" id="input2" name="input2"><br><br>
+
+        <label for="input3">Area Income:</label>
+        <input type="text" id="input3" name="input3"><br><br>
+
+        <label for="input4">Daily internet usage:</label>
+        <input type="text" id="input4" name="input4"><br><br>
+
+        <label for="input5">Gender '0' for female '1' for male:</label>
+        <input type="text" id="input5" name="input5"><br><br>
+
+        <input type="submit" value="Predict">
+    </form>
+</body>
+</html>
